@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif, "Avenir Next", "Avenir";
+    background-image: url(imge.jpeg); /* Ganti dengan nama file gambar dan format yang sesuai */
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+  }
+  
+  header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    display: inline;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+ 
+
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+  }
+
+  th, td {
+    border: 1px solid #142366;
+    padding: 8px;
+    text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: transform 0.3s ease;
+}
+
+#navbar {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 90;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+}
+
+#navbar li {
+  margin-bottom: 20px;
+}
+
+#navbar a {
+  display: block;
+  color: #fff;
+  font-size: 16PX;
+  text-decoration: none;
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+
+/* CSS untuk tampilan desktop */
+.card {
+  width: 3s00px; /* Sesuaikan dengan lebar card */
+  margin: 20px;
+}
+
+.table-container {
+  overflow-x: auto; /* Tambahkan scrollbar horizontal jika tabel melebihi lebar card */
+}
+
+/* CSS untuk tampilan seluler */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+ @media screen and (maX-width: 768px) {
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }    
+}
+
+
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 5.0s ease-in-out;
+}
+
+
+
+.card {
+  width: 700px; /* Adjust card width as needed */
+  margin-right: 20px; /* Space between cards, adjust as needed */
+  box-shadow: 0 4px 8px rgb(49, 7, 146);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+#slideshow {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #0a0a0a;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+#slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 40px; /* Sesuaikan ukuran gambar sesuai keinginan */
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menfes-icons {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+
+.menfes-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.menfes-icons img {
+  width: 70px; /* Sesuaikan ukuran gambar sesuai keinginan */
+  height: auto;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contaiker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  background-color: #2484f1;
+  border-radius: 30px;
+  margin:25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.task {
+  position: absolute;
+  top: -20px;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  margin-right: -10px;
+}
+
+.right {
+  margin-left: -10px;
+}
+
+circle {
+  fill: rgb(196, 20, 20);
+}
+
+svg {
+  position: absolute;
+}
+
+.sammy-nowrap-2 {
+  border-radius: 6px;
+  background-color: aliceblue;
+  border: 2px dashed gray;
+  max-width: 70%;
+  padding: 1em;
+  margin-bottom: .4em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
