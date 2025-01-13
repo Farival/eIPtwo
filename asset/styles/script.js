@@ -68,3 +68,23 @@ if (isMobile) {
         });
     });
 }
+
+const elements = document.querySelectorAll('.animate-up');
+
+const handleScroll = () => {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 50) {
+            el.classList.add('active');
+        } else {
+            el.classList.remove('active');
+        }
+    });
+};
+
+window.addEventListener('scroll', handleScroll);
+
+// Trigger animation on page load
+handleScroll()
