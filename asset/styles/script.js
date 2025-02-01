@@ -69,22 +69,22 @@ if (isMobile) {
     });
 }
 
-const elements = document.querySelectorAll('.animate-up');
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll(".bos");
 
-const handleScroll = () => {
-    elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
+    function checkBoxes() {
+        const triggerBottom = window.innerHeight * 0.8;
 
-        if (rect.top < windowHeight - 50) {
-            el.classList.add('active');
-        } else {
-            el.classList.remove('active');
-        }
-    });
-};
+        boxes.forEach(bos => {
+            const boxTop = bos.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                bos.classList.add("show");
+            } else {
+                bos.classList.remove("show");
+            }
+        });
+    }
 
-window.addEventListener('scroll', handleScroll);
-
-// Trigger animation on page load
-handleScroll()
+    window.addEventListener("scroll", checkBoxes);
+    checkBoxes();
+});

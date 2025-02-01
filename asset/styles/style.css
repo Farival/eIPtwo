@@ -512,25 +512,23 @@ footer p{
 
 }
 
-.skoten {
-  padding: 100px;
+.lemper {
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.animate-up {
-  opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.5s ease-out;
-}
-
-.animate-up.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.setan {
-  height: 100vh;
+.bos {
+  
   display: inline;
   justify-content: space-between;
   align-items: center;
-    margin: 20px 0;
+  margin: 0px auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.bos.show {
+  opacity: 1;
+  transform: translateY(0);
 }
