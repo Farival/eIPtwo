@@ -513,7 +513,7 @@ footer p{
 }
 
 .skoten {
-  padding: 1%;
+  padding: 100px;
 }
 
 .animate-up {
@@ -525,4 +525,12 @@ footer p{
 .animate-up.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.setan {
+  height: 100vh;
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+    margin: 20px 0;
 }
